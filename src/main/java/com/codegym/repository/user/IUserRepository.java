@@ -1,4 +1,7 @@
 package com.codegym.repository.user;
 
-public interface IUserRepository {
+import com.codegym.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IUserRepository extends JpaRepository<User, Long> {
 }
